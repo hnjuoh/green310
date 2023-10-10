@@ -5,25 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>표와 리스트</title>
-
-    <style>
-
-        ul {background-color: antiquewhite;}
-        .box1 li {font-weight: 600;}
-        .box1 li:nth-child(1) {color: red;}
-        .box1 li:nth-child(odd) {background-color: yellow;}
-
-
-
-        .box2 em {color: blue;}
-        .box2 li em {font-weight: 600;}
-        /* .box2>em {적용안됨} */
-        .box2>li>em {background-color: red;}
-    </style>
-
-
-
-
 </head>
 <body>
     <h1>표와 리스트</h1>
@@ -32,17 +13,17 @@
         내비게이션 메뉴를 만들거나,<br>
         같은 특징을 가지고 있는 글들을 나열할 때 사용
     </p>
-    <ul class="box1">
+    <ul>
         <li>ol = orderlist의 약자로 순서가 있는 목록 제목</li>
         <li>ul = unorderlist의 약자로 순서가 없는 목록 제목</li>
         <li>li = list의 약자로 목록의 내용을 작성</li>
     </ul>
 
-    <ul class="box2">
-        <li><em>특징 1</em> - 들여쓰기가 사용됨(일정크기의 margin과 padding이 적용됨)</li>
-        <li><em>특징 2</em> - 앞에 기호 혹은 숫자가 나타남</li>
-        <li><em>특징 3</em> - ol, ul, li 모두 블럭 태그</li>
-        <li><em>특징 4</em> - li의 내용을 작성하며 내부에 ol, ul을 중복할 수 있다.</li>
+    <ul>
+        <li>특징 1 - 들여쓰기가 사용됨(일정크기의 margin과 padding이 적용됨)</li>
+        <li>특징 2 - 앞에 기호 혹은 숫자가 나타남</li>
+        <li>특징 3 - ol, ul, li 모두 블럭 태그</li>
+        <li>특징 4 - li에 목록의 내용을 작성하며 내부에 ol, ul을 중복할 수 있다.</li>
     </ul>
 
     
