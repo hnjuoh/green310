@@ -5,20 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>표와 리스트 예제</title>
+
+    <style>
+
+        li a {color: red;}
+        li li {font-weight: 600;}
+        ul>li>a {background-color: aqua;}
+        li>ol>li>a {background-color: yellow;}
+        
+        
+    </style>
+
+
+
+    <style>
+
+        .fee {background-color: blanchedalmond;}
+        .tea {font-weight: 600;}
+        .like {color: rgb(238, 46, 16);}
+        
+    </style>
+
+
 </head>
 <body>
     <h1>표와 리스트 예제</h1>
     <h2>리스트예제001</h2>
 
     <ul>
-        <li><b>과일</b>
+        <li><a href=""><b>과일</b></a>
             <ol>
-                <li>딸기</li>
-                <li>사과</li>
-                <li>포도</li>
+                <li><a href="">딸기</a></li>
+                <li><a href="">사과</a></li>
+                <li><a href="">포도</a></li>
             </ol>
         </li>
-        <li><b>채소</b>
+        <li><a href=""><b>채소</b></a>
             <ol>
                 <li>상추</li>
                 <li>배추</li>
@@ -45,7 +67,7 @@
     
 
     <h2>리스트예제002 - 자동쓰기 활용</h2>
-<ul>
+    <ul>
     <li>따뜻한 음료
     <ol>
         <li>커피</li>
@@ -57,7 +79,7 @@
     <ul>
         <li>커피</li>
         <li>스무디</li>
-        <li>식혜</li>
+        <li>식혜</li>  
     </ul>
 
 <p>
@@ -79,14 +101,14 @@
 </ul>
 
 <h2>표예제001</h2>
-<!-- 정답파일 -->
+
 <table border="1">
     <tr>
-        <td colspan="3">공연요금</td>
+        <td colspan="3" class="fee">공연요금</td>
      
     </tr>
     <tr>
-        <td>구분</td>
+        <td >구분</td>
         <td>R석</td>
         <td>S석</td>
     </tr>
@@ -116,21 +138,19 @@
 
 
 <h2>표예제002</h2>
-<!-- 정답 코드 -->
-<!--  -->
 
 <table border="1">
     <tr> 
-        <td colspan ="6"> 한국의차</td>
+        <td colspan ="6" class="fee"> 한국의차</td>
         
     </tr>
     
     <tr>
-        <td rowspan="6">뿌리차</td>
+        <td rowspan="6" class="tea">뿌리차</td>
         <td>인삼차</td>
-        <td rowspan="9">과일차</td>
+        <td rowspan="9" class="tea">과일차</td>
         <td>수정과</td>
-        <td rowspan="5">잎차</td>
+        <td rowspan="5" class="tea">잎차</td>
         <td>뽕잎차</td>
     
         
@@ -168,19 +188,19 @@
     <tr>
         <td>마차</td>
         <td>매실차</td>
-        <td rowspan="4">기타</td>
+        <td rowspan="4" class="tea" >기타</td>
         <td>두충차</td>
     </tr>
 
     <tr>
-        <td rowspan="3">곡물차</td>
+        <td rowspan="3" class="tea">곡물차</td>
         <td>보리차</td>
         <td>모과차</td>
         <td>영지버섯차</td>
     </tr>
 
     <tr>
-        <td>옥수수차</td>
+        <td class="like">옥수수차</td>
         <td>산수유차</td>
         <td>귤강차</td>
     </tr>

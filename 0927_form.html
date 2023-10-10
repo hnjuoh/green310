@@ -20,9 +20,14 @@
     <li>특징2 - form 태그 자체는 자동 줄바꿈 기능을 가지고 있고 내부에 작성하는 input 태그 등은 인라인 태그이다</li>
 </ul>
 
+<style>
+.box[type="text"] {background-color: blue;}
+
+</style>
+
     <form action="http://www.google.com/search" method="get">
         <label for="search-query">검색어</label> 
-        <input type="text" id="search-query" name="q">
+        <input class="box" type="text" id="search-query" name="q">
         <button type="submit">검색</button>
     </form>
 </body>
