@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 공부하기</title>
+    
+    <!-- 외부 스타일 시트 연결 -->
+    <link rel="stylesheet" href="css/grid-guide.css">
+
+    <!-- 레이아웃 구조 외부 스타일 시트 연결 -->
+    <link rel="stylesheet" href="css/style_layout001.css">
+</head>
+<body>
+    <h1>그리드 가이드 활용법</h1>
+    <p>grid-guide.css 파일을 link연결을 통해 외부 스타일 시트로 연결한다.</p>
+
+    <h3>활용법</h3>
+    <ul>
+        <li>div태그를 활요아여 클래스를 붙인다.</li>
+        <li>클래스의 이름은 box+숫자 or 알파벳</li>
+        <li>자손자로 들어갈수록 색깔은 바뀌는 것을 확인한다.<br> 빨>노>초>파</li>
+            
+        <li>박스내부의 글씨 또한 가운데 정렬에 크기도 고정값이다.</li>
+        <li>고정되어있는 크기와 박스의 영향으로 내부에 사이즈가 조정되지 않는다.</li>
+        <li>레이아웃의 스타일이 결정되면 디자인을 입히기 위해서는 그리드 가이드 연결 끊어야 함.</li>
+    </ul>
+    <div class="boxA">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+    </div>
+    <div class="box3">박스3</div>
+</body>
+</html>
