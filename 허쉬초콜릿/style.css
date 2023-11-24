@@ -1,0 +1,186 @@
+/* 언어 설정 */
+@charset 'utf-8';
+
+/* reset */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none; vertical-align: bottom;}
+
+
+
+
+/* header 설정 */
+header {
+    width: 100%;
+    height: 171px;
+    background-color: #FFF2DE; 
+    position: relative;
+}
+header h1 {
+    position: absolute;
+    top: 31px;
+    left: 80px;
+}
+
+/* 유틸리티 */
+.util {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+.util li {
+    padding-right: 10px;
+}
+.util li a {}
+
+/* GNB */
+.gnb {}
+.gnb ul {display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 200px;}
+.gnb ul li {
+    padding-top: 68px;
+    padding-right: 90px;
+    
+}
+.gnb ul li a {
+    font-size: 30px;
+    
+}
+
+
+
+/* hero 설정 */
+.hero {
+    width: 100%;
+    height: 822px;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    background-image: url(img/hero_bg.svg);
+    
+}
+.hero p {
+    position: absolute;
+    top: 283px;
+    left: 400px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+.hero img {
+    width: 600px;
+    height: 746px;
+    position: absolute;
+    right: 300px;
+    top: 0;
+}
+
+
+/* area 설정 */
+.areaBox {
+    width: 100%;
+    height: 900px;
+    background-image: url(img/area_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.areaBox .area {
+    position: relative;
+    
+    
+}
+/* 타이틀 로고 */
+.areaBox .area_logo {
+    position: absolute;
+    top: 10px;
+    left: 910px;
+    
+}
+.areaBox .area h2 {
+    
+    color: #56230E;
+    font-size: 60px;
+    position: absolute;
+    top: 50px;
+    left: 750px;
+
+}
+
+.areaBox .area .imgBox {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+.areaBox .imgBox {}
+.areaBox .imgBox a {
+    margin-right: 30px;
+}
+/* 클릭하면 움직임 */
+.areaBox .imgBox a:hover {}
+
+
+/* weare 설정 */
+.weare {
+    width: 100%;
+    height: 900px;
+}
+.weare .weare_logo {}
+.weare h2 {
+    color: #56230E;
+    font-size: 60px;
+}
+.weare .vid {}
+
+
+/* milt 설정 */
+.milt {}
+.milt h2 {}
+.milt p:nth-child(1) {}
+.milt p:nth-child(2) {}
+
+/* 밀튼허쉬 */
+.milt .imgBox img:nth-child(1) {}
+/* 허쉬하트 */
+.milt .imgBox img:nth-child(2) {}
+
+
+
+/* banner 설정 */
+/* background-attachment */
+.banner {}
+.banner p:nth-child(1) {}
+.banner p:nth-child(2) {}
+.banner img {}
+
+
+/* donation 설정 */
+.donation {}
+.donation h2 {}
+.donation p:nth-child(1) {}
+
+/* 우리의 중점분야 */
+.donation strong {}
+.donation p:nth-child(2) {}
+
+.donation .imgBox {}
+.donation .txtBox {}
+
+
+
+/* cook 설정 */
+/* 배경 */
+.cook {}
+.cook h2 {}
+.cook .imgBox {}
+
+
+/* footer 설정 */
+.footer {}
+.footer img {}
+.footer p {}
