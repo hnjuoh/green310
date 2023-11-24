@@ -1,5 +1,7 @@
 /* 언어 설정 */
 @charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 
 /* reset 설정 */
 * {margin: 0; padding: 0;}
@@ -37,20 +39,47 @@ header {width: 700px;
 .sns {position: fixed;
         width: 200px;
         height: 50px;
-        background-color: crimson;
-        right: 50px;
+        right: 60px;
         top: 50px;}
-
+.sns ul {}
+.sns ul li {display: inline-block;}
+.sns ul li a {padding-right: 10px;}
+.sns i {font-size: 25px;
+        color: rgb(185, 251, 5);
+        opacity: 0.5;
+        transition: all 0.4s ease 0s;}
 
 
 /* txtBox 설정 */
 .txtBox {width: 340px;
         height: 280px;
         position: fixed;
-        background-color: tomato;
         right: 0;
         top: 50%;
         margin-top: -140px;}
+
+.txtBox .txt {
+        position: absolute;
+        font-size: 34px;
+        font-family: play;
+        color: #fff;
+        letter-spacing: -2px;
+        top: 200px;}
+.txtBox .txt p {}
+.txtBox .txt em {}
+.txtBox .txt b {color: #97e031;}
+
+.txtBox .tit {font-size: 150px;
+                font-family: 'Monoton', sans-serif;
+                color: #fff;}
+.txtBox .tit em {font-weight: normal;
+                font-size: 50px;
+                font-style: italic;
+                font-family: 'Play', sans-serif;}
+.txtBox .tit p {}
+
+
+
 
 
 /* slide 설정 */
@@ -166,6 +195,25 @@ header {width: 700px;
 .slide .btn p:nth-child(1) {animation: ani linear 1.5s 0s infinite;}
 .slide .btn p:nth-child(2) {animation: ani linear 1.5s 0.5s infinite;}
 .slide .btn p:nth-child(3) {animation: ani linear 1.5s 1s infinite;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 애니메이션 설정 */

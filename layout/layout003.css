@@ -1,0 +1,246 @@
+/* 언어설정 */
+* {margin: 0; padding: 0;}
+
+/* reset 설정 */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none; vertical-align: bottom;}
+
+
+
+
+/* 박스1 설정 */
+.box1 {display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: darkgreen;}
+.box1-1 h1 {color: aliceblue;}
+
+.gnb {}
+.gnb ul {display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+.gnb li {margin-left: 50px;}
+.gnb a {margin-right: 40px;
+        color: aliceblue;}
+.gnb a:hover {background-color:#000;}
+
+
+
+/* 박스2 설정 */
+.box2 {width: 100%;
+        height: 600px;
+        position: relative;}
+.box2 .hero {height: 500px;}
+.box2 .txtBox {position: relative;
+                left: 50px;
+                bottom: -100px;
+                padding-left: 125px ;}
+.box2 .imgBox {width: 80%;
+                height: 500px;
+                display: flex;
+                justify-content: right;
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin-right: 200px;}
+.box2 .localMenu {display: flex;
+                justify-content: space-around;
+                align-items: flex-end;
+                height: 200px;
+                background-color: antiquewhite;
+                padding-bottom: 70px;
+                height: 100px;}
+.box2 .localMenu a {display: block;
+                justify-content: space-around;}
+.box2 .localMenu p {font-weight: bold;}
+
+.box2 .txtBox p:nth-child(1) {font-size: 30px;
+                                font-weight: bold;
+                                text-align: left;}
+.box2 .txtBox p:nth-child(2) {font-size: 15px;}
+
+
+
+
+
+
+/* 박스3 설정 */
+.box3 {width: 100%;
+        text-align: center;
+        background-color: beige;}
+.box3-1 {display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 350px;}
+.box3-1 h1 {}
+.box3-1 p {}
+
+.box3-2 {display: flex;
+                justify-content:space-around;
+                align-items: flex-start;
+                }
+.box3-2 .imgBox {display: inline-block;
+                width: 30%;
+                height: 320px;
+                
+                align-items: center;}
+.box3-2 .imgBox img {width: 500px;
+                height: 300px;
+                margin-bottom: 60px;
+                margin-left: 60px;}
+.box3-2 .listBox {vertical-align: bottom;}
+.box3-2 .listBox ul {width: 100%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;}
+.box3-2 .listBox li {}
+.box3-2 .listBox li img {width: 220px; height: 220px;}
+.box3-2 .listBox a {}
+.box3-2 .listBox strong {display: block;
+                        text-align: center;}
+.box3-2 .listBox p {width: 40%;
+                        text-align: center;
+                        margin-left: 210px;}
+
+
+
+/* 박스4 설정 */
+.box4 {width: 100%;
+        background-color:ghostwhite;}
+.box4 h2 {text-align: center;
+        justify-content: center;
+        padding-top: 50px;}
+.box4-1 {display: flex;
+        justify-content: space-around;}
+.box4 .listBox {display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: row;}
+.box4 .listBox ul {}
+.box4 .listBox ul li img {width: 100px;
+                        height: 70px;
+                        margin: 10px 20px;}
+.box4 .listBox p {}
+
+.box4 .imgBox ul {width: 60px;
+                height: 50px;
+                position: relative;}
+.box4 .imgBox li {}
+.box4 .imgBox ul li {position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100px;}
+.box4 .imgBox ul img {width: 300px;
+                        height: 200px;}
+
+
+
+/* 박스 5 설정 */
+.box5 {display: flex;
+        justify-content: space-around;
+        background-color: cornsilk;
+        width: 100%;
+        height: 600px;}
+.box5-1 {display: inline-block;}
+
+.box5 title {}
+.box5 .listBox {}
+.box5 ul {}
+.box5 li {}
+
+.box5 .btn {text-align: end;}
+.box5 .btn p:nth-child(1) {display: inline-block;
+                                border: 1px solid #000;
+                                border-radius: 5px;
+                                text-align: center;
+                                padding: 5px;}
+.box5 .btn p:nth-child(2) {display: inline-block;
+                                border: 1px solid #000;
+                                border-radius: 5px;
+                                text-align: center;
+                                padding: 5px;}
+
+.box5-2 img {width: 600px;
+                height: 500px;
+                justify-content: space-around;
+                margin-top: 50px;}
+
+/* 박스 6 설정 */
+
+.box6 {width: 100%;
+        height: 500px;
+        display: flex;
+        background-color: darksalmon;
+        justify-content:space-around;
+        align-items: center;
+        text-align: center;}
+.box6-1 {padding-right: 100px;}
+.box6-1 strong {font-weight: bold;
+                font-size: 100px;}
+.box6-1 p {text-align: center;}
+
+.box6-2 {width: 1px;
+        height: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+
+.box6-3 {padding-left: 100px;}
+.box6-3 strong {font-weight: bold;}
+.box6-3 p {text-align: center;}
+
+
+
+/* 박스7 설정 */
+.box7 {width: 100%;
+        height: 600px;
+        background-color: darkkhaki;}
+.box7-1 {}
+.box7-1 .container {}
+.box7-1 .container img {}
+
+.box7-2 {}
+.box7-2 .trailer {}
+.box7-2 .trailer ul {}
+.box7-2 .trailer li {}
+
+
+
+/* 박스8 설정 */
+.box8 {width: 100%;
+        height: 600px;
+        background-color: wheat;}
+.box8-1 {}
+.box8-1 img {}
+
+.box8-2 {}
+.box8-2 .txtbox {}
+
+
+
+
+
+
+/* 박스9 설정 */
+.box9 {width: 100%;
+        height: 600px;
+        background-color: white;}
+.box9-1 {}
+.box9-2 {}
+
+
+
+
+/* 박스10 설정 */
+.box10 {width: 100%;
+    height: 600px;
+    background-color:black;}
+.box10-1 {}
+.box10-2 {}

@@ -1,0 +1,346 @@
+/* 언어 설정 */
+@charset 'utf-8';
+
+/* reset */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none; vertical-align: bottom;}
+
+
+/* 박스1 설정 */
+.box1-1 {display: none;}
+
+.util {background-color: #ffecda;
+        height: 60px;}
+.util ul {display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: flex-end;}
+.util li {
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+.util a {display: block;
+        padding: 0 20px;
+        font-size: 12px;}
+.util li a:hover{color:brown;}
+
+
+
+.box1-2 {}
+.header {display: flex;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;}
+.header h1 {width: 20%;}
+.header .gnb {width: 80%;}
+.gnb ul {display: flex;
+        justify-content: flex-end;}
+.gnb li {}
+.gnb a {display: block;
+        padding: 20px;
+        font-size: 20px;}
+.header span {font-size: 50px;
+                display: block;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 1;
+                right: 0;
+                top: 0;}
+
+
+
+/* 모바일시 gnb 안 보이게 설정*/
+.header .gnb {display: none;}
+
+
+
+
+
+.box1-3 {height: 80vh;
+        background-image: url(https://freight.cargo.site/w/2000/i/73d44dbbe2b4547b17e9ee7b3544c31b230a8c4d13803d27824be814581dd135/expo1.jpg);
+        
+        background-size: cover;
+        background-position: center bottom;}
+.hero {width:80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: flex-start;}
+.hero .title {font-size: 60px;
+                color: #fff;
+                margin-bottom: 30px;}
+.hero .txtBox {width: 40%;
+                height: 30%;
+                font-size: 22px;
+                color: #fff;}
+.hero .more {background-color: #fff;
+                padding: 10px 30px;
+                cursor: pointer;
+                font-size: 18px;}
+.hero .more:hover {opacity: 0.6;}
+
+
+
+
+
+/* 박스2 설정 */
+.box2>div {
+        padding: 20px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 250px;
+        position: relative;}
+.box2>div:nth-child(1) {background-color: #f4f9f4}
+.box2>div:nth-child(2) {background-color: #BDBDBD}
+.box2>div:nth-child(3) {background-color: #f4f9f4}
+.box2>div:nth-child(4) {background-color: #BDBDBD}
+
+.box2 strong {font-size: 22px;
+        display: block;
+        margin-bottom: 20px;}
+.box2 p {width: 80%;}
+.box2 span {
+border: 1px solid #000;
+padding: 10px;
+display: inline-block;
+position: absolute;
+right: 10px;
+bottom: 10px;
+}
+
+
+
+/* 태블릿시 hero 안 보이게 설정 */
+.hero {display: none;}
+
+
+
+/* 박스3 설정 */
+.box3>div {height: 450px;}
+.box3>div:nth-child(1) {background-color: #ffc8c8;}
+.box3>div:nth-child(2) {background-color: #ff9999;}
+.box3>div:nth-child(3) {background-color: #ffc8c8;}
+.box3>div>div {display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 40px 10px;
+                box-sizing: border-box;
+                align-items: flex-start;
+                height: 100%;}
+.box3 .txtBox {width: 100%;
+                padding-bottom: 20px;}
+.box3 .imgBox {width: 100%;}
+
+.txtBox strong {font-size: 22px;
+                display: block;
+                margin-bottom: 20px;}
+.txtBox p {margin-bottom: 30px;}
+.txtBox span {display: inline-block;
+                background-color: #fff;
+                padding: 10px 30px;}
+
+
+.imgBox {height: 60%;
+        overflow: hidden;
+        align-self: flex-end;}
+.imgBox img {width: 100%;}
+
+
+
+
+
+/* 박스4 설정 */
+
+.box4 {padding: 20px 0 0 0;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;}
+.box4-1 {display: flex;
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+.box4-1>div {width: 100%;
+                height: 100%;}
+
+.map {text-align: center;}
+.map h3 {font-size: 28px;
+        margin-bottom: 10px;}
+.mapBox {width: 100%;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+.mapBox iframe {width: 100%; height: 80%;}
+.mapBox ul {margin-left: 20px;}
+.mapBox li {padding: 10px;}
+
+/* 플렉스 설정 */
+/* .snsSet {background-color: #f4f9f4;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;}
+.snsSet h3 {}
+.snsSet ul {display: flex;
+                justify-content: flex-end;}
+.snsSet li {}
+.snsSet a {} */
+
+
+/* position 활용 */
+.box4-1>div.snsSet {background-color: cadetblue;
+        position: relative;
+        height: 100px;}
+.snsSet h3 {position: absolute;
+                right: 50%;
+                bottom: 60%;
+                margin-right: -100px;
+                width: 200px;
+                text-align: center;}
+.snsSet ul {position: absolute;
+                right: 50%;
+                margin-right: -100px;
+                bottom: 50%;
+                margin-bottom: -50px;
+                width: 200px;
+                height: 50px;}
+.snsSet li {float: left;}
+
+
+.box4-2 {padding: 20px;
+        background-color: #333;
+        color: #fff;}
+.top {position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;}
+
+
+
+
+
+
+
+/* 미디어쿼리 ############################################### */
+/* 태블릿 구간 768px 이상 구간 */
+@media(min-width:768px){
+
+
+    /* 설정 */
+    /* 박스1 설정 */
+
+
+    /* 박스2 설정 */
+        .box2 {display: flex;
+                flex-wrap: wrap;}
+        .box2>div {width: 50%;}
+
+
+
+
+    /* 박스3 설정 */
+        .box3>div>div {flex-direction: row;}
+
+
+    /* 박스3 설정 */
+.box3>div {height: 300px;}
+.box3>div>div {height: 100%;
+                padding: 20px 10px;
+                align-items: flex-start;}
+.box3 .txtBox {width: 60%;}
+.box3 .imgBox {width: 30%;}
+
+.txtBox strong {font-size: 22px;
+                margin-bottom: 20px;}
+.txtBox p {margin-bottom: 30px;}
+.txtBox span {padding: 10px 30px;}
+
+
+.imgBox {height: 60%;
+        align-self: flex-end;}
+
+} /* 태블릿 끝///////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* 데스크탑 구간 1024px 이상 구간 */
+@media(min-width:1024px){
+
+    /* 설정 */
+    /* 박스1 설정 */
+        .box1-1 {display: block !important;}
+        /* important는 css 중에서 우선순위로 먼저 지정하고 가라는 의미로
+        css 파일 중 1회만 사용권고*/
+        .header .gnb {display: block;}
+        .header span {display: none;}
+        .hero {display: flex;}
+
+
+    /* 박스2 설정 구간 */
+        .box2>div {width: 25%;}
+
+
+    /* 박스3 설정 */
+        .box3>div>div {width: 90%;
+                        margin-left: auto;}
+
+        /* 박스 4 설정 */
+        .box4 {}
+        .box4-1 {height: 300px;
+                flex-direction: row;}
+        .box4-1>div {width: 50%;}
+
+        .mapBox {width: 70%;
+                display: flex;
+                height: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;}
+        .mapBox iframe {width: 80%; height: 80%;}
+        
+        
+        
+        /* position을 활용 */
+        .box4-1>div.snsSet {background-color: cadetblue;
+                position: relative;
+                height: 300px;}
+        .snsSet h3 {position: absolute;
+                        right: 0;
+                        bottom: 60px;
+                        width: 200px;
+                        margin-right: 0;
+                        text-align: center;}
+        .snsSet ul {position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 200px;
+                        height: 50px;
+                        margin-right: 0;
+                        margin-bottom: 0;}
+        .snsSet li {float: left;}
+
+
+
+}/* 데스크탑 끝////////////////////////////////////////////////////*/

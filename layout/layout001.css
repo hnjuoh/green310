@@ -1,0 +1,244 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* reset 설정 */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none; vertical-align: bottom;}
+
+div {overflow: hidden;}
+h2 {font-weight: bold;}
+
+
+
+
+
+
+
+
+/* box1 설정 */
+.box1 {background-color: cadetblue;}
+.box1-1 {}
+.box1-1 h2 {display: flex;
+        justify-content: flex-start;}
+.box1 ul {display: flex;
+        justify-content: flex-end;}
+.box1 li {}
+.box1 a {display: block;
+        padding: 20px;}
+button {}
+
+
+
+
+
+
+
+
+/* box2 설정 */
+.box2 {background-color: antiquewhite;
+        height: 500px;
+        padding: 10px 0;
+        /* display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;*/
+        text-align: center;
+        } 
+.box2 h2 {margin-top: 50px;}
+.box2 p {}
+.box2 button {margin-top: 50px;
+                border: none;
+                background-color: rgb(206, 164, 220);
+                color: #fff;
+                width: 100px;
+                height: 30px;}
+
+
+
+
+
+
+
+
+/* box3 설정 */
+.box3 {background-color: aliceblue;
+        text-align: center;
+        width: 100%;
+        height: 300px;}
+.box3 h2 {margin-top: 50px;/*display: flex;
+    justify-content: center; */}
+.box3 p {display:inline-block;
+        text-align:center;
+        margin-top: 30px;}
+
+
+
+
+
+
+
+/* box4 설정 */
+.box4 {display: flex;
+        background-color: wheat;}
+.box4-1 {width: 50%;
+        height: 50%;}
+.box4-1 p {width: 300px;
+        height: 300px;
+                justify-content: center;
+                margin-left: 300px;
+                background-color: aquamarine;}
+.box4-2 {width: 50%;
+        text-align: center;
+        margin-top: 100px;}
+.box4-2 h2 {font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;}
+.box4-2 p {font-size: 16px;
+                display:inline-block;
+                text-align:center;}
+.box4-2 button {margin-top: 50px;
+                border: none;
+                background-color: rgb(206, 164, 220);
+                color: #fff;
+                width: 100px;
+                height: 30px;}
+
+
+
+
+
+/* box5 설정 */
+.box5 {/*display: flex;
+        background-color: burlywood;*/
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: rgb(208, 160, 160);
+        padding: 50px 50px;
+        } 
+.box5>div {}
+
+.box5 img {display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #888;}
+
+                
+.box5-1 {}
+.box5-1 img {width: 300px;
+                height: 300px;
+                display: block;
+                margin: 0 auto;
+                background-color: #888;}
+.box5-1 p {display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+
+
+.box5-2 {}
+.box5-2 img {width: 300px;
+                height: 300px;
+                display: flex;
+                margin: 0 auto;
+                background-color: #888;
+                text-align: center;}
+.box5-2 p {display: flex;
+                justify-content: center;
+                
+                }
+
+.box5-3 {}
+.box5-3 img {width: 300px;
+                height: 300px;
+                display: block;
+                margin: 0 auto;
+                background-color: #888;}
+.box5-3 p {display: flex;
+                justify-content: center;
+                text-align: center;
+                }
+
+
+
+
+
+
+/* box6 설정 */
+.box6 {width: 100%;
+        height: 300px;
+        background-color: tan;
+        position: relative;}
+/* .box6-1 {position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #eee;
+        width: 70%;
+        height: 150px;
+        opacity: 5;
+        } */
+.box6 h2 {margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;}
+.box6 p {display: flex;
+        justify-content: center;
+        text-align: center;}
+
+
+
+
+
+
+
+
+/* box7 설정 */
+.box7 {background-color: cornsilk;
+        height: 300px;
+        width: 100%;}
+.box7 h2 {margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;}
+.box7 p {display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 50px;}
+
+
+
+
+
+
+
+/* box8 설정(footer) */
+.box8 {width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        background-color: silver;}
+.box8>div {text-align: center;}
+.box8-1 {width: 35%;
+        display: flex;
+        justify-content: center center;
+        flex-direction: column;
+        text-align:left;
+        margin-top: 80px;}
+.box8-2 {width: 35%;
+        justify-content: center center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 80px;}
+.box8-2 h2 {display: block;
+        text-align: center;
+        justify-content: center;}
+.box8-3 {width: 35%;
+        text-align: right;
+        margin-top: 80px;}

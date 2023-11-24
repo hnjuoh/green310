@@ -1,0 +1,131 @@
+/* 언어 설정 */
+@charset 'utf-8';
+
+/* reset 설정 */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none; vertical-align: bottom;}
+
+/* 박스1 설정 */
+header {display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 200px;}
+.box1 {}
+.box1-1 {width: 100%;
+        height: auto;
+        align-items: center;
+        margin: 0px 200px;}
+.box1 img {width: 150px;
+            height: 150px;}
+.box1-2 {}
+
+.box1-2 ul {display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            }
+.box1-2 ul li {margin: 0 10px;
+                margin-right: 60px;}
+
+
+
+
+/* 박스2 설정 */
+.box2 {width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+.box2-1 {}
+.box2-1 p {margin: 0 30px;}
+.box2-1 img {width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 1px solid #000;
+            overflow: hidden;
+            margin-right: 20px;}
+
+.box2-2 {text-align:left;}
+.box2-2 strong {font-size: 30px;
+                }
+.box2-2 p {margin-top: 30px;}
+
+.box2 .snsSet {position: relative;
+        background-color: aquamarine;}
+.snsSet ul {justify-content: flex-start;
+            position: absolute;
+            }
+.snsSet ul li {}
+.snsSet a {margin: 0 30px;}
+
+
+
+/* 박스3 설정 */
+section .box3 {width: 100%;
+        height: 320px;
+        text-align: center;}
+
+.box3-1 {}
+.box3-1 h2 {text-align: center;
+            margin-bottom: 30px;
+            margin-right: 20px;}
+.box3-1 ul {display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;}
+.box3-1 li{text-align: center;}
+
+.box3-1 img {width: 300px;
+            height: 210px;}
+.box3-1 .txtBox {}
+
+
+.box3-2 {display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 100px;}
+.box3-2 h2 {padding-bottom: 30px;}
+.box3-2 ul {display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin-bottom: 40px;}
+.box3-2 li {margin: 20px 20px;}
+.box3-2 img {width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            border-radius: 50px;
+            overflow: hidden;}
+
+
+.box3-2 ul li:hover {background-color: ;}
+
+
+
+
+/* 박스4 설정 */
+.box4 {width: 100%;
+        height: 500px;
+        margin-top: 200px;}
+.box4-1 {text-align: center;}
+.box4-1 h2 {margin: 30px 20px;}
+.box4-1 p {}
+
+.box4-2 {display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;}
+.box4-2 .form_box {
+                    } 
+/* div로 묶음*/
+
+
+/* footer 설정 */
+footer {width: 100%;
+        height: 30px;
+        text-align: center;
+        background-color: rgb(243, 226, 198);}
+footer p {}

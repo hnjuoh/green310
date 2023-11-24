@@ -1,0 +1,233 @@
+/* 언어 설정 */
+@charset 'utf-8';
+
+/* reset */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none; vertical-align: bottom;}
+
+
+/* 박스1 설정 */
+.box1-1 {display: none;}
+
+.util {background-color: burlywood;
+        height: 60px;}
+.util ul {display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: flex-end;}
+.util li {
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+.util a {display: block;
+        padding: 0 20px;
+        font-size: 12px;}
+.util li a:hover{color:brown;}
+
+
+
+.box1-2 {}
+.header {display: flex;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;}
+.header h1 {width: 20%;}
+.header .gnb {width: 80%;
+            background-color: aqua;}
+.gnb ul {display: flex;
+        justify-content: flex-end;}
+.gnb li {}
+.gnb a {display: block;
+        padding: 20px;
+        font-size: 20px;}
+.header span {font-size: 50px;
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 1;
+            right: 0;
+            top: 0;}
+
+
+
+/* 모바일시 gnb 안 보이게 설정*/
+.header .gnb {display: none;}
+
+
+
+
+
+.box1-3 {height: 80vh;
+    background-image: url(https://picsum.photos/id/1/1280/1204);
+    background-size: cover;
+    background-position: center bottom;}
+.hero {width:80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: flex-start;}
+.hero .title {font-size: 60px;
+                color: #fff;
+                margin-bottom: 30px;}
+.hero .txtBox {width: 40%;
+                height: 30%;
+                font-size: 22px;
+                color: #fff;}
+.hero .more {background-color: #fff;
+            padding: 10px 30px;
+            cursor: pointer;
+            font-size: 18px;}
+.hero .more:hover {opacity: 0.6;}
+
+
+
+
+
+/* 박스2 설정 */
+.box2>div {
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 250px;
+    position: relative;}
+.box2>div:nth-child(1) {background-color: yellow;}
+.box2>div:nth-child(2) {background-color: rgb(230, 230, 129);}
+.box2>div:nth-child(3) {background-color: yellow;}
+.box2>div:nth-child(4) {background-color: rgb(220, 220, 131);}
+
+.box2 strong {font-size: 22px;
+        display: block;
+        margin-bottom: 20px;}
+.box2 p {width: 80%;}
+.box2 span {
+border: 1px solid #000;
+padding: 10px;
+display: inline-block;
+position: absolute;
+right: 10px;
+bottom: 10px;
+}
+
+
+
+/* 태블릿시 hero 안 보이게 설정 */
+.hero {display: none;}
+
+
+
+/* 박스3 설정 */
+.box3>div {height: 450px;}
+.box3>div:nth-child(1) {background-color: #33cccc;}
+.box3>div:nth-child(2) {background-color: #33aaaa;}
+.box3>div:nth-child(3) {background-color: #339999;}
+.box3>div>div {display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 10px;
+            box-sizing: border-box;
+            align-items: flex-start;
+            height: 100%;}
+.box3 .txtBox {width: 100%;
+                padding-bottom: 20px;}
+.box3 .imgBox {width: 100%;}
+
+.txtBox strong {font-size: 22px;
+                display: block;
+                margin-bottom: 20px;}
+.txtBox p {margin-bottom: 30px;}
+.txtBox span {display: inline-block;
+            background-color: #fff;
+            padding: 10px 30px;}
+
+
+.imgBox {height: 60%;
+        overflow: hidden;
+        align-self: flex-end;}
+.imgBox img {width: 100%;}
+
+
+
+
+/* 미디어쿼리 ############################################### */
+/* 태블릿 구간 768px 이상 구간 */
+@media(min-width:768px){
+
+
+    /* 설정 */
+    /* 박스1 설정 */
+    
+
+    /* 박스2 설정 */
+    .box2 {display: flex;
+            flex-wrap: wrap;}
+    .box2>div {width: 50%;}
+
+
+
+
+    /* 박스3 설정 */
+    .box3>div>div {flex-direction: row;}
+
+
+    /* 박스3 설정 */
+.box3>div {height: 300px;}
+.box3>div>div {height: 100%;
+            padding: 20px 10px;
+            align-items: flex-start;}
+.box3 .txtBox {width: 60%;}
+.box3 .imgBox {width: 30%;}
+
+.txtBox strong {font-size: 22px;
+                margin-bottom: 20px;}
+.txtBox p {margin-bottom: 30px;}
+.txtBox span {padding: 10px 30px;}
+
+
+.imgBox {height: 60%;
+        align-self: flex-end;}
+
+
+
+
+
+
+
+} /* 태블릿 끝///////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* 데스크탑 구간 1024px 이상 구간 */
+@media(min-width:1024px){
+
+    /* 설정 */
+    /* 박스1 설정 */
+    .box1-1 {display: block !important;}
+    /* important는 css 중에서 우선순위로 먼저 지정하고 가라는 의미로
+    css 파일 중 1회만 사용권고*/
+    .header .gnb {display: block;}
+    .header span {display: none;}
+    .hero {display: flex;}
+    
+    
+    /* 박스2 설정 구간 */
+    .box2>div {width: 25%;}
+    
+
+    /* 박스3 설정 */
+    .box3>div>div {width: 90%;
+                    margin-left: auto;}
+
+
+
+}/* 데스크탑 끝////////////////////////////////////////////////////*/
